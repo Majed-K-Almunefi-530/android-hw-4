@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3EFFEB3B"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/thegradecalculator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="cursive"
+        android:text="Grade calculator"
+        android:textColor="#000000"
+        android:textSize="40sp"
+        />
+    <TextView
+        android:id="@+id/powered"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@+id/thegradecalculator"
+        android:layout_marginTop="40dp"
+        android:fontFamily="cursive"
+        android:text="powered by kuwait codes"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        />
+    <TextView
+        android:id="@+id/enteryourgrades"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@+id/thegradecalculator"
+        android:layout_marginTop="70dp"
+        android:fontFamily="cursive"
+        android:text="enter your grades please"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        />
+
+
+    <EditText
+        android:id="@+id/Quizs"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@+id/powered"
+        android:layout_marginTop="70dp"
+        android:background="#797CB342"
+        android:ems="10"
+        android:hint="Quizes %15"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/homeworks"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@+id/Quizs"
+        android:layout_marginTop="80dp"
+        android:background="#797CB342"
+        android:ems="10"
+        android:hint="Homeworks %25"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/midterm"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@+id/homeworks"
+        android:layout_marginTop="80dp"
+        android:background="#797CB342"
+        android:ems="10"
+        android:hint="Mid Terms %30"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/Final"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@+id/midterm"
+        android:layout_marginTop="80dp"
+        android:background="#797CB342"
+        android:ems="10"
+        android:hint="Finals %30"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/calc"
+        android:layout_width="2009dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@+id/Final"
+        android:layout_marginTop="70dp"
+        android:background="#43D81B60"
+        android:text="Calculate"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="2000dp"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@+id/calc"
+        android:layout_marginTop="60dp"
+        android:background="#43D81B60"
+        android:text="reset"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="1000dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@+id/reset"
+        android:layout_marginTop="60dp"
+        android:textSize="50dp"
+        android:text=" "
+        android:textAlignment="center"
+        />
+
+
+</RelativeLayout>
